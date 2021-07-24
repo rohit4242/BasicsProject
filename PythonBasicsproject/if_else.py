@@ -1,35 +1,21 @@
-# age = 18
-# old = 50
 
-# print('Enter The Your Age:')
-# n = int(input())
+while True:
+    print('Enter The Your Age: ')
+    age = int(input())
 
-# if 18<n<=60:
-#     print('you can drive')
-# elif n==age:
-#     print('we wil think about')
-# elif n>100:
-#     print('you are the very old')
-# else:
-#     print('you can not drive')
+    if age > 7 and age<100:
 
-# while True:
-#     print('Enter The Your Age: ')
-#     age = int(input())
+        if age>18 and age<60:
+            print('you can drive')
 
-#     if age > 7 and age<100:
-
-#         if age>18 and age<60:
-#             print('you can drive')
-
-#         elif age==18:
-#             print('we will think about')
+        elif age==18:
+            print('we will think about')
             
-#         else:
-#             print('you can not drive')
+        else:
+            print('you can not drive')
 
-#     else:
-#         print('you are the out of age')
+    else:
+        print('you are the out of age')
         
 # faulty calculator 
 def faulty():

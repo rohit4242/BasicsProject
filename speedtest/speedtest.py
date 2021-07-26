@@ -1,7 +1,8 @@
 # internat speed test with python
-from speedtest import Speedtest
-
-st=Speedtest()
-
-print('your download speed is: ',st.download())
-print('your upload speed is: ', st.upload())
+import speedtest
+s = speedtest.Speedtest()
+s.get_best_server()
+s.download()
+s.upload()
+res = s.results.dict()
+print(res["download"], res["upload"], res["ping"])
